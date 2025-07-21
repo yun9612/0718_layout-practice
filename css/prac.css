@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 /* 전체 레이아웃 */
 .wrap {
   width: 1200px;
@@ -41,6 +45,29 @@
   background-color: gray;
   color: #fff;
   padding: 20px 40px;
+  position: relative;
+}
+.menu > ul > li:hover {
+  background-color: #949494;
+}
+.submenu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.submenu > li {
+  background-color: gray;
+  padding: 10px;
+  display: none;
+}
+.submenu > li:hover {
+  background-color: #949494;
+}
+.menu > ul > li:hover .submenu > li {
+  display: block;
 }
 /* 메인 */
 main {
