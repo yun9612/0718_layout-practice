@@ -98,11 +98,16 @@ main {
   width: 300px;
   display: block;
   height: 100%;
+  transition: all 0.3s;
 }
-.desc1 {
+.image_box > img:hover {
+  transform: scale(1.2);
+  filter: blur(2px);
+}
+.desc {
   /* background-color: aliceblue; */
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 .schedule {
@@ -115,12 +120,8 @@ main {
   padding-bottom: 50px;
 }
 .desc_box {
-  width: calc(100% - 300px);
-}
-.schedule2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
+  /* background-color: #949494; */
+  width: 600px;
 }
 /* 푸터 */
 .footer {
